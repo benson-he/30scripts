@@ -1,0 +1,1 @@
+netstat -n | awk '/^tcp/ {++b[$NF]} END {for(a in b) print a,b[a]}'
